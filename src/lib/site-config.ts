@@ -1,0 +1,48 @@
+ import { env } from '@/env.mjs'
+
+export const siteConfig = {
+  name: 'Kunal Paste',
+  title: 'Kunal | Fullstack developer',
+  description:
+    "Hello, I'm Kunal. I am a Full-Stack Developer from Pune, Maharashtra. I enjoy building scalable web applications and dynamic user experiences. My focus is on the MERN stack, Devops and Next.js, working across both front-end and back-end to deliver complete solutions.",
+  keywords: [
+    'Kunal Paste',
+    'Front-end developer',
+    'Fullstack developer',
+    'Pune',
+    'React',
+    'Next.js',
+    'Web development',
+    'Front-end',
+    'UI/UX',
+    'Responsive design',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Portfolio',
+    'Projects',
+    'Website',
+    'Web applications',
+    'Developer',
+    'Code',
+    'Programming',
+    'Tech enthusiast',
+  ],
+  creator: 'Build With Kunal',
+  url: '#',
+  contact: {
+    email: 'pastekunal6@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/kunal-paste-31b2b8250/',
+    github: 'https://github.com/Kunal-Paste',
+    x:'https://x.com/Kunal_pasteee',
+  },
+  links: {
+    contactForm: '/#contact',
+    linkedin: 'https://www.linkedin.com/in/kunal-paste-31b2b8250/',
+    github: 'https://github.com/Kunal-Paste',
+    X:'https://x.com/Kunal_pasteee',
+    mailTo: 'mailto:pastekunal6@gmail.com',
+    cvPdf: '/john-doe-cv.pdf',
+    sohailYoutube: 'https://www.youtube.com/@buildwithsohail',
+  },
+}
