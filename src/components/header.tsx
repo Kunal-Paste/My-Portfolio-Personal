@@ -37,7 +37,7 @@ export default function Header() {
 
   const DesktopNavItem = (data: NavLink) => {
     return (
-      <li className="border-muted-foreground/10 py-3 text-sm [&:not(:last-child)]:border-b">
+      <li className="">
         <Link
           className="hover:text-foreground relative px-4 py-2 transition-colors"
           href={data.href}
@@ -64,46 +64,51 @@ export default function Header() {
   };
 
   return (
-    <div>
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className="sticky top-5 z-20 my-5 sm:top-10 sm:my-10"
+    >
       {/*Mobile Navbar*/}
+      <div className="sm:hidden flex items-center gap-2 justify-center">
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
+          <DialogTrigger asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-background/80 backdrop-blur-sm"
+            >
+              Menu <Icons.chevronDown className="ml-2 size-4" />
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle className="text-md self-start font-medium">
+                Navigation
+              </DialogTitle>
+            </DialogHeader>
+            <nav>
+              <ul>
+                {navLinks.map((i) => (
+                  <MobileNavItem key={i.name} {...i} />
+                ))}
+              </ul>
+            </nav>
+          </DialogContent>
+        </Dialog>
 
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogTrigger asChild>
-          <Button
-            variant="outline"
-            size="lg"
-            className="bg-background/80 backdrop-blur-sm sm:hidden"
-          >
-            Menu <Icons.chevronDown className="ml-2 size-4" />
-          </Button>
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle className="text-md self-start font-medium">
-              Navigation
-            </DialogTitle>
-          </DialogHeader>
-          <nav>
-            <ul>
-              {navLinks.map((i) => (
-                <MobileNavItem key={i.name} {...i} />
-              ))}
-            </ul>
-          </nav>
-        </DialogContent>
-      </Dialog>
+        {/*Tablet/Desktop Navbar*/}
 
-      {/*Tablet/Desktop Navbar*/}
+        <ThemeToggle className="bg-background/80 backdrop-blur-sm" />
+      </div>
 
-      <ThemeToggle className="bg-background/80 backdrop-blur-sm sm:hidden" />
-
-      <nav>
+      <nav className="bg-background/80 items-center gap-2 text-muted-foreground hidden text-sm sm:flex rounded-full border px-2 py-3 backdrop-blur-sm">
         <ul className="flex gap-5">
           {navLinks.map((i) => (
             <DesktopNavItem key={i.name} {...i} />
           ))}
         </ul>
       </nav>
-    </div>
+    </motion.header>
   );
 }
