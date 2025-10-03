@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { GridPattern } from "./ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ import { Button } from "./ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28">
+    <section id="home" className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28">
       {/* backgroung grig*/}
 
       <GridPattern
