@@ -39,7 +39,7 @@ export const projectsData: Project[] = [
     ],
     links: {
       preview: "#",
-      github: "#",
+      github: "https://github.com/Kunal-Paste/KEO-bot",
       githubApi: "#",
     },
   },
@@ -57,7 +57,7 @@ export const projectsData: Project[] = [
     ],
     links: {
       preview: "#",
-      github: "#",
+      github: "https://github.com/Kunal-Paste/BiteScroll",
       githubApi: "#",
     },
   },

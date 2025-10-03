@@ -63,7 +63,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        I'm a{" "}
+        I'm Kunal Paste a{" "}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
           Creative Frontend
         </span>{" "}
