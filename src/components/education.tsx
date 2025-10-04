@@ -1,29 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useSectionInView } from '@/hooks/use-section-in-view'
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const education = [
   {
-    institution: "Maulana Azad National Urdu University, Hyderabad",
-    degree: "B.Tech (Lateral Entry), Computer Science",
-    period: "Oct 2022 - May 2025",
-    gpa: "CGPA: 8.71/10",
+    institution: "Dr. D.Y Patil University, Pune, Ambi",
+    degree: "B.Tech, Computer Science",
+    period: "Oct 2021 - jun 2025",
+    gpa: "CGPA: 7.96/10",
     icon: "🎓",
   },
   {
-    institution: "Maulana Azad National Urdu University, Hyderabad",
-    degree: "Diploma in Computer Science and Engineering",
-    period: "Aug 2019 - Jun 2022",
-    gpa: "CGPA: 9.78/10",
+    institution: "Dr. D.Y. Patil Junior College of Science, Talegaon",
+    degree: "HSC-Science",
+    period: "Apr 2019 - Jun 2021",
+    gpa: "pct: 83%",
     icon: "🏫",
   },
 ];
 
 export default function Education() {
-    const { ref } = useSectionInView('Education')
+  const { ref } = useSectionInView("Education");
   return (
-    <section ref={ref} id="education" className="py-10">
+    <section ref={ref} id="education" className="py-10 p-2">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

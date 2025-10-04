@@ -35,6 +35,7 @@ export const siteConfig = {
     linkedin: 'https://www.linkedin.com/in/kunal-paste-31b2b8250/',
     github: 'https://github.com/Kunal-Paste',
     x:'https://x.com/Kunal_pasteee',
+    no:' +91 9307514656',
   },
   links: {
     contactForm: '/#contact',
@@ -43,6 +44,6 @@ export const siteConfig = {
     twitter:'https://x.com/Kunal_pasteee',
     mailTo: 'mailto:pastekunal6@gmail.com',
     cvPdf: '/john-doe-cv.pdf',
-    sohailYoutube: 'https://www.youtube.com/@buildwithsohail',
+    KunalX: 'https://x.com/Kunal_pasteee',
   },
 }

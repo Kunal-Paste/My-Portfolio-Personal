@@ -116,6 +116,16 @@ export default function ContactSection() {
                 {siteConfig.contact.email}
               </Link>
             </Button>{' '}
+            <span className='font-black'> or </span>
+            <Button
+              variant="link"
+              className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
+              asChild
+            >
+              <Link href={siteConfig.links.mailTo}>
+                {siteConfig.contact.no}
+              </Link>
+            </Button>{' '}
             or through this form.
           </>
         }

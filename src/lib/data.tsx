@@ -49,7 +49,7 @@ export const projectsData: Project[] = [
     video: "assets/videos/biteScroll.mp4",
     title: "Bite Scroll",
     description:
-      "Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.",
+      "BiteScroll is a full-stack MERN project where users can scroll through an endless feed of food reels and instantly view and order from that food provider. Built with MongoDB, Express.js, ReactJS, and Node.js, real-time order handling, and efficient data management.",
     technologies: [
       "React.js",
       "JavaScript",
