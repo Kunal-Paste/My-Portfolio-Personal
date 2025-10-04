@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SectionHeading from "./section-heading";
 import { Badge } from "./ui/badge";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,10 +23,10 @@ const fadeInAnimationVariants = {
 };
 
 export default function ProjectsSection() {
-  // const { ref } = useSectionInView('Projects')
+  const { ref } = useSectionInView('Projects')
 
   return (
-    <section id="projects" className="my-10 scroll-mt-28 md:mb-20 p-1.5">
+    <section ref={ref} id="projects" className="my-10 scroll-mt-28 md:mb-20 p-1.5">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
@@ -58,7 +59,7 @@ export default function ProjectsSection() {
             className="flex flex-col rounded border p-4 cursor-pointer"
           >
             <Link
-              href={data.links.github}
+              href={data.links.preview}
               aria-label={data.title}
               target="_blank"
               className="overflow-hidden rounded"

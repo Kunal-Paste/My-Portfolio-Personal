@@ -7,10 +7,16 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 export default function HeroSection() {
+  const { ref } = useSectionInView("Home");
   return (
-    <section id="home" className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28">
+    <section
+      ref={ref}
+      id="home"
+      className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
+    >
       {/* backgroung grig*/}
 
       <GridPattern
@@ -34,7 +40,7 @@ export default function HeroSection() {
         )}
       />
 
-      {/* blinking dot / available*/}
+      {/* Green blinking dot / available*/}
 
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -63,11 +69,11 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        I'm Kunal Paste a{" "}
+        I’m Kunal Paste, a{" "}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Creative Frontend
+          Software Developer
         </span>{" "}
-        developer crafting modern digital experiences.
+        turning ideas into the future of web and SaaS experiences.
       </motion.h1>
 
       {/* small paragraph*/}
@@ -83,9 +89,9 @@ export default function HeroSection() {
         You have a project in mind? Let's talk about it!
       </motion.p>
 
-       {/* buttons and links*/}
+      {/* buttons and links*/}
 
-       <motion.div
+      <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -102,6 +108,15 @@ export default function HeroSection() {
           <a href={siteConfig.links.cvPdf} download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
+        </Button>
+        <Button variant="outline" size="icon" asChild>
+          <Link
+            href={siteConfig.links.twitter}
+            aria-label="Linkedin"
+            target="_blank"
+          >
+            <Icons.twitter className="size-5" />
+          </Link>
         </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
@@ -122,7 +137,6 @@ export default function HeroSection() {
           </Link>
         </Button>
       </motion.div>
-
     </section>
   );
 }

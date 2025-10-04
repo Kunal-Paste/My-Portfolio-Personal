@@ -22,7 +22,7 @@ export type Experience = {
   technologies: string[]
 }
 
-export type NavName = 'Home' | 'About' | 'Experience' | 'Projects' | 'Contact'
+export type NavName = 'Home' | 'About' | 'Education' | 'Projects' | 'Contact'
 
 export type NavLink = {
   name: NavName

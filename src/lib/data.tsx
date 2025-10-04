@@ -11,8 +11,8 @@ export const navLinks: NavLink[] = [
     href: "#about",
   },
   {
-    name: "Experience",
-    href: "#experience",
+    name: "Education",
+    href: "#education",
   },
   {
     name: "Projects",
@@ -29,16 +29,18 @@ export const projectsData: Project[] = [
     video: "assets/videos/cosmicAI.mp4",
     title: "Cosmic AI",
     description:
-      "A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.",
+      "An intelligent real-time chat application powered by GenAI, built with ReactJS, Node.js, Express, Socket.io, and MongoDB to enable seamless user conversations and dynamically generated AI responses.",
     technologies: [
       "React.js",
+      "Redux",
       "Node.js",
       "MongoDB",
       "Socket.io",
-      "Material-UI",
+      "PineCone",
+      "GenAI",
     ],
     links: {
-      preview: "#",
+      preview: "https://cosmicai-01zg.onrender.com",
       github: "https://github.com/Kunal-Paste/KEO-bot",
       githubApi: "#",
     },
@@ -49,14 +51,14 @@ export const projectsData: Project[] = [
     description:
       "Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.",
     technologies: [
-      "Next.js",
-      "TypeScript",
+      "React.js",
+      "JavaScript",
       "Express.js",
-      "PostgreSQL",
-      "Stripe",
+      "MongoDB",
+      "ImageKit",
     ],
     links: {
-      preview: "#",
+      preview: "https://bitescroll.onrender.com",
       github: "https://github.com/Kunal-Paste/BiteScroll",
       githubApi: "#",
     },
@@ -109,4 +111,6 @@ export const skillsData: Skill[] = [
   { name: "node", icon: <Icons.node className="size-12" /> },
   { name: "socketio", icon: <Icons.socketio className="size-12" /> },
   { name: "mongodb", icon: <Icons.mongodb className="size-12" /> },
+  { name: "Mysql", icon: <Icons.mysql className="size-12" /> },
+  { name: "Express", icon: <Icons.express className="size-12" /> },
 ];

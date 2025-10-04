@@ -7,12 +7,13 @@ import { motion } from 'framer-motion'
 import { Icons } from './icons'
 import SectionHeading from './section-heading'
 import { Badge } from './ui/badge'
+// import { useSectionInView } from '@/hooks/use-section-in-view'
 
 export default function ExperienceSection() {
   // const { ref } = useSectionInView('Experience')
 
   return (
-    <section  id="experience" className="my-10 scroll-mt-28 md:mb-20">
+    <section   id="experience" className="my-10 scroll-mt-28 md:mb-20"> 
       <SectionHeading
         heading="My Experience"
         content="Professional experience that I have accumulated over several years."
