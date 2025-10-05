@@ -137,6 +137,17 @@ export default function HeroSection() {
           </Link>
         </Button>
       </motion.div>
+
+      {/* <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+        className="flex flex-row gap-2 items-center h-[13rem] mt-[7rem]"
+      >
+        <img className="h-full w-full" src="https://i.pinimg.com/1200x/c2/94/ba/c294bac3f087bc43afa7830b0dbfd4be.jpg" alt="" />
+      </motion.div> */}
     </section>
   );
 }
