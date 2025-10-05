@@ -8,6 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
 import { useSectionInView } from "@/hooks/use-section-in-view";
+// absolute top-[23rem] right-[8rem] sm:flex sm:right-[19rem]
 
 export default function HeroSection() {
   const { ref } = useSectionInView("Home");
@@ -104,11 +105,6 @@ export default function HeroSection() {
             Get in touch <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
-        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
-          <a href={siteConfig.links.cvPdf} download>
-            Download CV <Icons.download className="ml-2 size-4" />
-          </a>
-        </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
             href={siteConfig.links.twitter}
@@ -138,6 +134,20 @@ export default function HeroSection() {
         </Button>
       </motion.div>
 
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+        className="flex flex-row gap-2 items-center"
+      >
+        <Button variant="outline" size="lg" className="flex" asChild>
+          <a href={siteConfig.links.cvPdf} download>
+            Download CV <Icons.download className="ml-2 size-4" />
+          </a>
+        </Button>
+      </motion.div>
     </section>
   );
 }
