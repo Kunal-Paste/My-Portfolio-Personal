@@ -104,7 +104,7 @@ export default function HeroSection() {
             Get in touch <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
-        <Button variant="outline" size="lg" className="flex" asChild>
+        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
           <a href={siteConfig.links.cvPdf} download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
