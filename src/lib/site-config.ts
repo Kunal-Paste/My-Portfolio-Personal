@@ -43,7 +43,7 @@ export const siteConfig = {
     github: 'https://github.com/Kunal-Paste',
     twitter:'https://x.com/Kunal_pasteee',
     mailTo: 'mailto:pastekunal6@gmail.com',
-    cvPdf: '/Kunal-Updated-Resume.pdf',
+    cvPdf: '/Kunal-Updated-Resumev1.pdf',
     KunalX: 'https://x.com/Kunal_pasteee',
   },
 }
