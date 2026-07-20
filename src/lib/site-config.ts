@@ -39,7 +39,7 @@ export const siteConfig = {
   },
   links: {
     contactForm: '/#contact',
-    linkedin: 'https://www.linkedin.com/in/kunal-paste-31b2b8250/',
+    linkedin: 'linkedin.com/in/kunal-paste-クナル-31b2b8250',
     github: 'https://github.com/Kunal-Paste',
     twitter:'https://x.com/Kunal_pasteee',
     mailTo: 'mailto:pastekunal6@gmail.com',
